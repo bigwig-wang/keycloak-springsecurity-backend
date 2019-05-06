@@ -1,9 +1,17 @@
 server:
   port: 9999
 
+#keycloak:
+#  realm: wdh
+#  auth-server-url: http://localhost:8080/auth
+#  ssl-required: external
+#  resource: service_app
+#  public-client: true
+
+
 keycloak:
   realm: wdh
+  bearer-only: true
   auth-server-url: http://localhost:8080/auth
   ssl-required: external
-  resource: service_app
-  public-client: true
+  resource: bearer-token-only-client

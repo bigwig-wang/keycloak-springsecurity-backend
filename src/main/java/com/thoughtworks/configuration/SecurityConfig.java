@@ -57,4 +57,5 @@ public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter{
     public RefreshTokenFilter getRefreshTokenFilter() {
         return new RefreshTokenFilter();
     }
+
 }
